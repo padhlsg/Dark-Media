@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  max-height: 2000px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body:-ms-input-placeholder {
+  display: none;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  padding: 20px 60px;
+  z-index: 10;
+  background-color: #232323;
+}
+
+header #icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  padding: 40px 60px;
+  margin-left: 80%;
+  z-index: 999;
+}
+
+header #icon i {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  position: relative;
+  transition: 0.5s;
+  margin: 0 10px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+header #icon.sticky {
+  top: -10px;
+}
+
+header #icon.sticky i {
+  color: black;
+  margin-left: 0;
+  z-index: 999;
+}
+
+header nav .logo {
+  position: relative;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+header nav .logo span {
+  color: black;
+  border: 3px solid white;
+  padding: 3px;
+  border-left: none;
+}
+
+header nav ul {
+  display: flex;
+  position: relative;
+  margin-left: 18rem;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul li {
+  position: relative;
+  display: flex;
+  list-style: none;
+  margin: 0 10%;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  font-weight: normal;
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropdown a {
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when the button is hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header nav i {
+  color: white;
+  font-size: 50px;
+}
+
+header nav.sticky {
+  background-color: white;
+  padding: 20px 60px;
+  transition: all 0.5s;
+  box-shadow: 0 20px 200px black;
+}
+
+header nav.sticky ul {
+  margin: auto 18rem;
+}
+
+header nav.sticky .logo {
+  color: black;
+}
+
+header nav.sticky .logo span {
+  border: black 3px solid;
+  padding: 3px;
+  border-left: none;
+}
+
+header nav.sticky ul li a {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header nav.sticky ul li a:hover {
+  color: rgb(114, 114, 114);
+}
+
+nav.sticky .dropdown-content {
+  background-color: #000000;
+}
+
+nav.sticky .dropdown-content a {
+  color: white;
+}
+
+#menuToggle {
+  display: none;
+}
+
+#menuToggle #menu i {
+  font-size: 30px;
+}
+
+#saved {
+  padding-top: 8rem;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.saves-judul {
+  width: 100%;
+  display: flex;
+  color: white;
+  border: none;
+  border-bottom: 1px solid #f1f1f1;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 10px 0;
+}
+
+.saves-judul p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.saves-judul input {
+  border: none;
+  background: none;
+  color: #fff;
+  padding-left: 10px;
+  transition: all 1s;
+}
+
+.saves-judul input:focus {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.saves-judul input::placeholder {
+  font-style: italic;
+  color: #a3a3a3;
+  font-size: 15px;
+}
+
+.box {
+  background-color: rgb(192, 192, 192);
+  max-width: 300px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  max-height: 450px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  position: relative;
+  margin: 30px;
+  box-shadow: 10px 10px 10px black;
+  animation: Fadein 5s;
+}
+
+.box img {
+  border-radius: 1 0px;
+  max-width: 100%;
+  position: relative;
+  margin: 20px 0;
+}
+
+.box a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.box i {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.box i:active {
+  color: black;
+}
+
+.box:hover {
+  background-color: #f9f9f9;
+  transform: translateY(-20px);
+  transition: all 0.2s;
+}
+
+.box a:hover {
+  color: black;
+}
+
+.isi-box {
+  width: auto;
+}
+
+#menuToggle {
+  display: none;
+}
+
+#menuToggle #menu i {
+  font-size: 30px;
+}
+
+footer {
+  background-color: #2b2b2b;
+  height: auto;
+}
+
+.container-footer {
+  width: 100%;
+}
+
+.icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 20px 10px;
+}
+
+.icon-footer a i {
+  font-size: 40px;
+  margin: 10px 10px;
+  color: #f1f1f1;
+}
+
+.top {
+  display: flex;
+  padding: 10px 10%;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.list-footer ul li {
+  line-height: 30px;
+  list-style: none;
+}
+
+.list-footer ul li::before {
+  content: "> ";
+  color: #f1f1f1;
+  padding-right: 10px;
+}
+
+.list-footer ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.5s;
+  font-weight: light;
+}
+
+.list-footer ul li:hover a {
+  margin-left: 10px;
+}
+
+.akhir-footer {
+  background-color: #3a3a3a;
+  padding: 15px 0;
+}
+
+.akhir-footer p {
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  header nav {
+    display: none;
+  }
+
+  header nav .icon a i {
+    display: block;
+  }
+
+  header #icon {
+    display: none;
+  }
+
+  #menuToggle {
+    display: block;
+    position: fixed;
+    top: 50px;
+    margin-left: 50px;
+    margin-top: -30px;
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle a:hover {
+    color: rgb(53, 53, 53);
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  /*
+ * Just a quick hamburger
+ */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #ffffff;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  header.sticky .menuToggle span {
+    background-color: #000000;
+  }
+
+  .menuToggle.sticky span #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #ffffff;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    position: absolute;
+    width: 250px;
+    margin: 0 0 0 -50px;
+    padding: 100px 10px;
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu li {
+    padding: 10px 10px;
+    font-size: 22px;
+  }
+
+  #menu .icon-menu {
+    margin-left: 10px;
+  }
+
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+}
+
+@media (max-width: 360px) {
+  #hero .judul p {
+    font-size: 50px;
+  }
+
+  .container-footer {
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .list-footer ul li a {
+    font-size: 15px;
+  }
+
+  .icon-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  .icon-footer a i {
+    font-size: 20px;
+  }
+
+  .akhir-footer {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Dark Media</title>
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="icon" type="images/x-icon" href="img/logofix.png" width="20px" height="30px" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="saved.html">Saved</a></li>
+          <li class="dropdown">
+            <a href="#">Bookmark</a>
+            <div class="dropdown-content">
+              <a href="#latest" class="tablinks" onclick="openCity(event, 'latest')">Latest</a>
+              <a href="#recommended" class="tablinks" onclick="openCity(event, 'recommended')">Recomennded</a>
+              <a href="#popular" class="tablinks" onclick="openCity(event, 'popular')">Popular</a>
+            </div>
+          </li>
+          <div class="icon-menu">
+            <a href=""><i class="bx bxs-user-circle"></i></a>
+            <a href="login.html"><i class="bx bx-log-out"></i></a>
+          </div>
+        </ul>
+      </div>
+      <nav>
+        <a href="#" class="logo">Dark <span>Media</span></a>
+        <ul>
+          <li><a href="home.html" style="border: none; border-bottom: 1px solid #383838">Home</a></li>
+          <li><a href="saved.html">Saved</a></li>
+          <li class="dropdown">
+            <a href="#">Bookmark</a>
+            <div class="dropdown-content">
+              <a href="#latest" class="tablinks" onclick="openCity(event, 'latest')">Latest</a>
+              <a href="#recommended" class="tablinks" onclick="openCity(event, 'recommended')">Recomennded</a>
+              <a href="#popular" class="tablinks" onclick="openCity(event, 'popular')">Popular</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="icon">
+        <a href="#"><i class="bx bxs-user-circle"></i></a>
+        <a href="login.html"><i class="bx bx-log-out"></i></a>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="container">
+        <div class="judul" data-aos="fade-right">
+          <p>Welcome to Dark <span>Media</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container-about">
+        <div class="foto">
+          <img src="/img/logo4.png" alt="" />
+        </div>
+        <div class="text">
+          <p>
+            Dark Media is the perfect place to organize and store your bookmarks with style and practicality. With a dark and minimalist appearance, Dark Media helps you keep all your favorite links and content organized and easy to access.
+            <br />
+            Follow <a href="https://github.com/padhlsg" target="_blank"> My Github</a> For my Profile.
+            <br />
+            Or
+            <br />
+            Send Message Via <a href="https://wa.me/085890878379?text=urlencodedtext" target="_blank">Whatsapp</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-footer">
+        <div class="top">
+          <div class="icon-footer">
+            <a href=""><i class="bx bxl-discord-alt"></i></a>
+            <a href="https://www.instagram.com/inotdrive/"><i class="bx bxl-instagram"></i></a>
+            <a href="https://github.com/padhlsg"><i class="bx bxl-github"></i></a>
+          </div>
+          <div class="list-footer">
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="saved.html">Saved</a></li>
+              <li><a href="#bookmark">Bookmark</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="akhir-footer">
+          <p>Create by Muhammad Fadhil Swarigading</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

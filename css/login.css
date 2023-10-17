@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-color: rgba(12, 12, 12, 0.801); /* Ganti nilai alpha (0.5) sesuai dengan tingkat transparansi yang Anda inginkan */
+  width: 100%;
+  height: 85vh;
+  background-blend-mode: darken; /* Ganti mode blend sesuai kebutuhan Anda */
+  background-size: cover;
+  background-position: 20% 80px;
+  background-repeat: no-repeat;
+}
+
+body::-webkit-input-placeholder {
+  display: none;
+}
+
+img {
+  float: right;
+  margin: 15% 18%;
+}
+
+form {
+  border-radius: 20px;
+  margin: 5% 5%;
+  background-color: white;
+  width: 30%;
+  height: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form h3 {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  font-weight: bold;
+}
+
+form input {
+  margin: 5% 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  pointer-events: fill;
+  border-width: 1px;
+  padding: 10px 0;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button {
+  color: white;
+  background-color: black;
+  padding: 5px;
+  width: 50%;
+  margin: auto;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 3px 3px 10px;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.2s;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 150px;
+    margin: 10% 33%;
+    float: none;
+  }
+
+  form {
+    width: 50%;
+    height: 400px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 380px) {
+  img {
+    margin: 10% 30%;
+  }
+
+  form {
+    width: 80%;
+  }
+}
