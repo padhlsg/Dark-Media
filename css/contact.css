@@ -272,6 +272,10 @@ nav.sticky .dropdown-content a {
   color: #004f99;
 }
 
+.text a::last-child {
+  color: #00ff22;
+}
+
 footer {
   background-color: #2b2b2b;
   height: auto;
