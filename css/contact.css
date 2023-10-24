@@ -272,7 +272,7 @@ nav.sticky .dropdown-content a {
   color: #004f99;
 }
 
-.text a::last-child {
+.text a:last-child {
   color: #00ff22;
 }
 
